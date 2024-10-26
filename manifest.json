@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Valid Address",
+    "version": "1.0",
+    "description": "Automatically sets the focused field's value to 'hello' using the Shift+Alt+D shortcut.",
+    "permissions": [
+      "scripting",
+      "activeTab",
+      "storage" 
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "valid_address": {
+        "suggested_key": {
+          "default": "Shift+Alt+X"
+        },
+        "description": "Set the focused field value to 'hello'"
+      }
+    }
+  }
+  
